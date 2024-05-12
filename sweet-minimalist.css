@@ -29,10 +29,6 @@
 	--mermaid-theme: dark;
 }
 
-i, em {
-	color: var(--em-color);
-}
-
 code {
 	background-color: #282c2f !important;
 }
