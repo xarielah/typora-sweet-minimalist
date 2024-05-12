@@ -1,6 +1,11 @@
 :root {
-	--text-color: #c8d1d9;
-	--bg-color: #0d1117;
+	/* New styles */
+	/* BACKUP --bg-color: #2d3134; */
+	--bg-color: #252829;
+	--text-color: #D9D9D9;
+	--em-color: #7cc2de;
+	--list-item-color: #f4a7fc;
+	/* end - New styles */
 	--side-bar-bg-color: #0d1117;
 	--control-text-color: #a9aaab;
 	--primary-color: #f9826c;
@@ -27,16 +32,10 @@
 	--mermaid-node-border: #bd7958;
 	--mermaid-contrast-color: #afe61d;
 	--mermaid-theme: dark;
-	--monospace: ui-monospace,
-		Menlo, Monaco,
-		"Cascadia Mono", "Segoe UI Mono",
-		"Roboto Mono",
-		"Oxygen Mono",
-		"Ubuntu Monospace",
-		"Source Code Pro",
-		"Fira Mono",
-		"Droid Sans Mono",
-		"Courier New", monospace;
+}
+
+i, em {
+	color: var(--em-color);
 }
 
 .pane-group {
@@ -80,21 +79,16 @@ body {
 
 #write {
 	background-color: var(--bg-color) !important;
-	font-family: system-ui,
-		-apple-system, BlinkMacSystemFont,
-		"Segoe UI",
-		"Roboto",
-		"Oxygen",
-		"Ubuntu",
-		"Cantarell",
-		"Fira Sans",
-		"Droid Sans",
-		"Helvetica Neue",
-		Arial, sans-serif;
+	font-family: "Pretty Neat", cursive;
 	font-weight: 500;
 	max-width: 860px;
 	margin: 0 auto;
 	padding: 30px;
+	text-align: left; /* RTL version is overwriting this */
+}
+
+#write ul, #write ol {
+	color: var(--list-item-color);
 }
 
 @media only screen and (min-width: 1400px) {
@@ -126,17 +120,7 @@ h4,
 h5,
 h6 {
 	color: var(--text-color);
-	font-family: system-ui,
-		-apple-system, BlinkMacSystemFont,
-		"Segoe UI",
-		"Roboto",
-		"Oxygen",
-		"Ubuntu",
-		"Cantarell",
-		"Fira Sans",
-		"Droid Sans",
-		"Helvetica Neue",
-		Arial, sans-serif;
+	font-family: "Rubik", sans-serif;
 	font-weight: 400;
 	padding-top: 5px;
 }
@@ -155,10 +139,6 @@ html {
 		"Helvetica Neue",
 		Arial, sans-serif;
 	font-weight: 500;
-}
-
-#write {
-	text-align: left;
 }
 
 h1,
@@ -215,19 +195,20 @@ h6 code {
 }
 
 h1 {
-	font-size: 2.6rem;
+	font-size: 2.5rem;
+	text-align: center;
 	padding-bottom: .15rem;
 	border-bottom: 1px solid var(--color-border-secondary);
 }
 
 h2 {
-	font-size: 1.9rem;
+	font-size: 2rem;
 	padding-bottom: .15rem;
 	border-bottom: 1px solid var(--color-border-secondary);
 }
 
 h3 {
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 }
 
 h4 {
@@ -283,7 +264,7 @@ kbd {
 }
 
 p {
-	font-size: 1.25rem;
+	font-size: 1.2rem; /* Old value: 1.25rem */
 	line-height: 1.5;
 }
 
@@ -1892,4 +1873,28 @@ div.cm-s-inner[lang="scss"] .cm-error {
 
 div.cm-s-inner[lang="ruby"] .cm-atom {
 	color: #d2a8ff !important;
+}
+
+@font-face {
+	font-family: "Pretty Neat";
+	src: 
+		url("./sweet-minimatlist/PrettyNeat-Regular.woff2"),
+		url("./sweet-minimatlist/PrettyNeat-Bold.woff2"),
+		url("./sweet-minimatlist/PrettyNeat-BoldItalic.woff2"),
+		url("./sweet-minimatlist/PrettyNeat-Italic.woff2");
+}
+
+@font-face {
+	font-family: "Architects Daughter";
+	src: url("./sweet-minimatlist/ArchitectsDaughter-Regular.woff2");
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("./sweet-minimatlist/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Heebo";
+	src: url("./sweet-minimatlist/Heebo-VariableFont_wght.ttf");
 }
