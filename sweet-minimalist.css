@@ -1,8 +1,13 @@
 @import 'github-dark-default.css';
 
 :root {
+	/* New styles */
+	/* BACKUP --bg-color: #2d3134; */
+	--bg-color: #252829;
 	--text-color: #D9D9D9;
-	--bg-color: #2d3134;
+	--em-color: #7cc2de;
+	--list-item-color: #f4a7fc;
+	/* end - New styles */
 	--side-bar-bg-color: #22272e;
 	--control-text-color: #a9aaab;
 	--primary-color: #f9826c;
@@ -33,21 +38,20 @@
 
 #write {
 	font-family: "Pretty Neat", cursive;
-  	font-weight: 400;
   	font-style: normal;
 	line-height: 0.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Architects Daughter", cursive;
+	font-family: "Rubik", sans-serif;
 }
 
 ul, ol {
-	color: #BA93BF;
+	color: var(--list-item-color);
 }
 
 i, em {
-	color: #73AABF;
+	color: var(--em-color);
 }
 
 code {
@@ -108,10 +112,24 @@ select[disabled]:hover {
 
 @font-face {
 	font-family: "Pretty Neat";
-	src: url("./sweet-minimatlist/PrettyNeat-Regular.woff2");
+	src: 
+		url("./sweet-minimatlist/PrettyNeat-Regular.woff2"),
+		url("./sweet-minimatlist/PrettyNeat-Bold.woff2"),
+		url("./sweet-minimatlist/PrettyNeat-BoldItalic.woff2"),
+		url("./sweet-minimatlist/PrettyNeat-Italic.woff2");
 }
 
 @font-face {
 	font-family: "Architects Daughter";
 	src: url("./sweet-minimatlist/ArchitectsDaughter-Regular.woff2");
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("./sweet-minimatlist/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Heebo";
+	src: url("./sweet-minimatlist/Heebo-VariableFont_wght.ttf");
 }

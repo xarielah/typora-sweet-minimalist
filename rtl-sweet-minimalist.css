@@ -1,0 +1,11 @@
+@import 'sweet-minimalist.css';
+
+#write {
+	font-family: "Heebo", sans-serif !important;
+  	font-style: normal;
+}
+
+#write, #write > * {
+	direction: rtl !important;
+	text-align: right !important;
+}
