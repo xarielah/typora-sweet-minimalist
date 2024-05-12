@@ -4,7 +4,11 @@
 
 My customized and adjusted version for “GitHub dark dimmed” CSS for typora’s markdown editor. Hope you’ll enjoy it.
 
+### Screenshot #1
+
 ![Screenshot1](https://s2.loli.net/2024/05/13/GT8vV4lwicXJn7A.png)
+
+### Screenshot #2
 
 ![image-20240512192058965](https://s2.loli.net/2024/05/13/pRB7WOlk5cfqYNv.png)
 
